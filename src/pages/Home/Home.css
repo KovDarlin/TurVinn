@@ -1,0 +1,248 @@
+body {
+  background-color: #f0f6f9;
+  font-family: sans-serif;
+}
+.container {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  z-index: -2;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: -2; /* чтобы он был под текстом и анимацией */
+}
+
+.title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  color: #ffffff;
+  font-size: 120px;
+  font-weight: 600;
+}
+
+.title-large {
+  height: 30px;
+  margin-bottom: -55px;
+  font-size: 20px;
+}
+
+.img-container {
+  display: inline-block;
+  overflow: hidden;
+  margin-left: -2.8px;
+  margin-right: -2.8px;
+  width: 270px;
+  vertical-align: top;
+  border-radius: 0px 0px 80px 80px;
+  animation-name: flow;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-delay: -2s;
+  transition-timing-function: cubic-bezier(0, 0.57, 1, 0.46);
+  box-shadow: 2px 2px 16px 2px rgba(0, 0, 0, 0.5);
+}
+
+.second-animation {
+  animation-delay: -1.5s;
+}
+
+.third-animation {
+  animation-delay: -1s;
+}
+
+.fourth-animation {
+  animation-delay: -0.5s;
+}
+
+.fifth-animation {
+  animation-delay: 0s;
+}
+
+.img {
+  object-fit: cover;
+  width: 270px;
+  height: 100vh;
+  margin-top: -60px;
+}
+
+.nba {
+  margin-top: -20px;
+}
+
+@keyframes flow {
+  0% {
+    height: 20%;
+    border-radius: 0px 0px 30px 30px;
+  }
+  50% {
+    height: 90%;
+    border-radius: 0px 0px 100px 100px;
+  }
+  100% {
+    height: 20%;
+    border-radius: 0px 0px 30px 30px;
+  }
+}
+
+/* Планшет (до 1024px) */
+@media (max-width: 1024px) {
+  .title {
+    font-size: 100px;
+  }
+
+  .title-large {
+    height: 120px;
+    font-size: 23px;
+  }
+
+  .img-container {
+    width: 150px;
+  }
+
+  .img {
+    width: 150px;
+    height: 100vh;
+    margin-top: -60px;
+  }
+}
+
+/* Телефон (до 768px) */
+@media (max-width: 768px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .title-large {
+    height: 120px;
+    font-size: 13px;
+  }
+
+  .img-container {
+    width: 72px;
+  }
+
+  .img {
+    width: 72px;
+    height: 100vh;
+    margin-top: -60px;
+  }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1280px) {
+  #img-1 {
+    display: none;
+  }
+}
+
+.about-vinnytsia {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: "Segoe UI", sans-serif;
+  line-height: 1.6;
+  background-color: #fffdfc;
+  color: #333;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.about-vinnytsia h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #5e3023;
+}
+
+.about-vinnytsia p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.audio-gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.audio-gallery-wrapper audio {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 10px;
+}
+
+.carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  max-width: 100%;
+}
+
+.carousel img {
+  height: 300px;
+  border-radius: 12px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.carousel img:hover {
+  transform: scale(1.05);
+}
+
+.audio-caption {
+  color: #777;
+  font-size: 14px;
+
+  margin-bottom: 10px;
+  max-width: 600px;
+}
+
+.image-grid {
+  max-width: 1100px;
+  margin: 40px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.grid-item {
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 1 / 1;
+}
+
+.grid-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s ease;
+}
+
+.grid-item img:hover {
+  transform: scale(1.05);
+}
