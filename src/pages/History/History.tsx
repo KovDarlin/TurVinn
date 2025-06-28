@@ -9,22 +9,26 @@ const History = () => {
     <main>
 
       <div
-        className="banner"
-        style={{ backgroundImage: 'url(/images/baner-foto.webp)' }}
-      >
-        <p className="banner-text">Вінничина
-        <p>Це більше, ніж просто регіон — це місце, де історія, природа та сучасні технології зустрічаються в одному маршруті. 
-          Ми створюємо інноваційні цифрові ресурси, щоб зробити подорож Вінниччиною зручною, цікавою та доступною кожному. 
-          Відкрий її туристичний потенціал онлайн — і заплануй свою подорож уже сьогодні!</p></p>
-      </div>
-
-
+  className="banner"
+  style={{ backgroundImage: 'url(/images/baner-foto.webp)' }}
+>
+  <div className="banner-text">
+    <h1>Вінниччина</h1>
+    <p>
+      Це більше, ніж просто регіон — це місце, де історія, природа та сучасні
+      технології зустрічаються в одному маршруті. Ми створюємо інноваційні
+      цифрові ресурси, щоб зробити подорож Вінниччиною зручною, цікавою та
+      доступною кожному. Відкрий її туристичний потенціал онлайн — і заплануй
+      свою подорож уже сьогодні!
+    </p>
+  </div>
+</div>
 
 
 
       <div className="audio-gallery-wrapper">
         <audio controls>
-          <source src="/audio/history-.mp3" type="audio/mpeg" />
+          <source src="/audio/history-full.mp3" type="audio/mpeg" />
           Your browser does not support the audio element.
         </audio>
         <p className="audio-caption">
@@ -46,7 +50,7 @@ const History = () => {
         З географічної точки зору територія Вінницької області — це землі, що лежать у середній течії Південного Бугу, або, 
         по-старому, Богу, званого в Геродота Гіпанісом.
       </p>
-
+      
       <p>
         У літописні часи, за Нестором, «Уличі і тиверці сиділи по Дністру і з'єднали з Дунаєм. Була їх множина». 
         Пізніше київський князь Олег, розширюючи володіння, стягував данину й володарював «над полянами, і древлянами, і мешканцями 
@@ -54,6 +58,16 @@ const History = () => {
         Побужжя увійшло до складу Київської Русі, 
         і вже в 907 році у відомий похід на Царгород Олег узяв із собою «тиверців, відомих як товмачі».
       </p>
+      <section className="image-grid">
+      <div className="grid-item">
+        <img src="/images/history1.jpg" alt="Фото 1" />
+      </div>
+      <div className="grid-item">
+        <img src="/images/history2.jpg" alt="Фото 2" />
+      </div>
+      
+    </section>
+
 
       <p>
         У період феодальної роздробленості Київської Русі ці землі ввійшли до складу Галицько-Волинського князівства. 
@@ -85,15 +99,7 @@ const History = () => {
     
 
 
-    <div className="audio-gallery-wrapper">
-        <audio controls>
-          <source src="/audio/history-2.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p className="audio-caption">
-            На сайті є аудіо, що відповідають тексту. Ви можете читати або прослуховувати текст.
-      </p>
-        </div>
+    
       
       <section className="about-vinnytsia">
       <p>
@@ -112,6 +118,16 @@ const History = () => {
         де варилося пиво винне, старослов'янське «вѣно» — посаг, придане, одержане Коріатовичами, і Вінничка — річка.
       </p>
 
+      <section className="image-grid">
+      <div className="grid-item">
+        <img src="/images/history3.jpg" alt="Фото 1" />
+      </div>
+      <div className="grid-item">
+        <img src="/images/Krewo.jpg" alt="Фото 2" />
+      </div>
+      
+    </section>
+
       <p>
         Невеликий дерев'яний замок у ряді інших степових зміцнень, звичайно, не радував ординців. З 1400 по 1569 рік він 
         піддавався тридцять разів тільки великим нападам, горів і знову вставав над Бугом.
@@ -124,18 +140,14 @@ const History = () => {
         Брацлавське воєводство, або коротко, за головним містом — Брацлавщину.
       </p>    
       </section>
-
-
-
       <div className="audio-gallery-wrapper">
-        <audio controls>
-          <source src="/audio/history-3.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p className="audio-caption">
-            На сайті є аудіо, що відповідають тексту. Ви можете читати або прослуховувати текст.
-      </p>
+       
+        <div className="carousel">
+          <img src="/images/Herb.png" alt="2" />
+          <img src="/images/Herb2.png" alt="3" />
         </div>
+     
+    </div>
       
       <section className="about-vinnytsia">
       <p>
@@ -178,15 +190,7 @@ const History = () => {
     </div>
 
 
-      <div className="audio-gallery-wrapper">
-        <audio controls>
-          <source src="/audio/history-4.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p className="audio-caption">
-            На сайті є аудіо, що відповідають тексту. Ви можете читати або прослуховувати текст.
-      </p>
-        </div>
+      
       <section className="about-vinnytsia">
       <p>
         Після Андрусівського перемир'я 1667 роки Брацлавщина, як і вся Правобережна Україна, залишилася під владою польської корони. 
@@ -196,6 +200,15 @@ const History = () => {
         Юрієм Хмельницьким та 
         іншими «князівство Сармата», і розтерзаний війнами край перетворився на пустелю, що роздирається внутрішніми суперечностями.
       </p>
+      <section className="image-grid">
+      <div className="grid-item">
+        <img src="/images/Petro.jpg" alt="Фото 1" />
+      </div>
+      <div className="grid-item">
+        <img src="/images/Yurii.png" alt="Фото 2" />
+      </div>
+      
+    </section>
 
       <p>
         Польська держава розхитувалася під ударами конфедерацій власної шляхти, поки не розсипалася, тричі розділена між могутніми сусідніми монархіями — Росією, 
@@ -218,18 +231,6 @@ const History = () => {
       </p>    
       </section>
 
-
-
-
-      <div className="audio-gallery-wrapper">
-        <audio controls>
-          <source src="/audio/history-5.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p className="audio-caption">
-            На сайті є аудіо, що відповідають тексту. Ви можете читати або прослуховувати текст.
-      </p>
-        </div>
       
       <section className="about-vinnytsia">
       <h2>УРСР</h2>
@@ -242,15 +243,7 @@ const History = () => {
     </section>
 
 
-    <div className="audio-gallery-wrapper">
-        <audio controls>
-          <source src="/audio/history-6.mp3" type="audio/mpeg" />
-          Your browser does not support the audio element.
-        </audio>
-        <p className="audio-caption">
-            На сайті є аудіо, що відповідають тексту. Ви можете читати або прослуховувати текст.
-      </p>
-        </div>
+    
       
       <section className="about-vinnytsia">
       <h2>Друга світова війна</h2>

@@ -35,7 +35,7 @@ const Home = () => {
 
       <section className="image-grid">
       <div className="grid-item">
-        <img src="/images/img-1.jpg" alt="Фото 1" />
+        <img src="/images/new-img.webp" alt="Фото 1" />
       </div>
       <div className="grid-item">
         <img src="/images/img-2.jpg" alt="Фото 2" />

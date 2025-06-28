@@ -22,10 +22,10 @@ const Footer = () => {
           <Link to="/">Головна</Link>
           <Link to="/history">Історія</Link>
           <Link to="/excursions">Екскурсії</Link>
-          <Link to="/profile">Кабінет</Link>
+          <Link to="/profile">Наш застосунок</Link>
       </div>
 
-      <p className="footer-copy">TurVinn © 2025 Kovalenko Daryna</p>
+      <p className="footer-copy">TurVinn © 2025 WebWitches</p>
     </footer>
   );
 };

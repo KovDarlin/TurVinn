@@ -1,33 +1,109 @@
-.profile-container {
+.app-container {
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 80vh;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 20px;
   background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+  min-height: 80vh;
   font-family: "Segoe UI", sans-serif;
-  padding: 40px 20px;
 }
 
-.profile-card {
-  background-color: #fff;
+.app-image img {
+  max-width: 250px;
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+.app-text {
+  max-width: 800px;
+  background: #fff;
   padding: 40px;
   border-radius: 20px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  max-width: 720px;
-  width: 100%;
 }
 
-.profile-card h1 {
+.app-text h1 {
   font-size: 32px;
-  color: #333;
   margin-bottom: 20px;
+  color: #333;
   text-align: center;
 }
 
-.intro-text {
+.app-text p {
   font-size: 18px;
   color: #444;
   line-height: 1.8;
-  white-space: pre-line;
+}
+
+.app-text .extra-text {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #2c3e50;
+}
+.app-text {
+  text-align: left; /* тепер весь текст по лівому */
+}
+
+.button-container {
+  text-align: center; /* а кнопка по центру */
+  margin-top: 30px;
+}
+
+.demo-button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #3b82f6;
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 18px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.demo-button:hover {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 15px;
+  }
+
+  .app-image img {
+    max-width: 180px;
+    border-radius: 15px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+  }
+
+  .app-text {
+    padding: 25px;
+    border-radius: 15px;
+  }
+
+  .app-text h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .app-text p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .app-text .extra-text {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .demo-button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
 }
